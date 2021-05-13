@@ -1,6 +1,6 @@
 {
-  "name": "@pancakeswap/interface",
-  "description": "Pancakeswap Interface",
+  "name": "@durianexchage/interface",
+  "description": "DurianExchange Interface",
   "homepage": ".",
   "private": true,
   "dependencies": {
