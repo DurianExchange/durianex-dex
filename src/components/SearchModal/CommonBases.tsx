@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text } from '@durianexchange/uikit'
-import { ChainId, Currency, currencyEquals, ETHER, Token } from '@pancakeswap-libs/sdk'
+import { ChainId, Currency, currencyEquals, ETHER, Token } from '@durianexchange/sdk'
 import styled from 'styled-components'
 
 import { SUGGESTED_BASES } from '../../constants'
