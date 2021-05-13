@@ -26,9 +26,9 @@
       "decimals": 18
     },
     {
-      "name": "LP3 Token",
-      "symbol": "LP3",
-      "address": "0xe70b7523f4bffa1f2e88d2ba709afd026030f412",
+      "name": "DURIAN Token",
+      "symbol": "DURIAN",
+      "address": "0x32eed5593cae8103839dfa86351d0388430cdc12",
       "chainId": 97,
       "decimals": 18,
       "logoURI": "/images/coins/ETH.png"
