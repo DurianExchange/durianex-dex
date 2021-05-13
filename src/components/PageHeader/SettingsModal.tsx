@@ -1,5 +1,5 @@
 import React from 'react'
-import { Modal } from '@pancakeswap-libs/uikit'
+import { Modal } from '@durianexchange/uikit'
 import SlippageToleranceSetting from './SlippageToleranceSetting'
 import TransactionDeadlineSetting from './TransactionDeadlineSetting'
 
