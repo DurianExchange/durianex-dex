@@ -5,9 +5,9 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 import { injected, bsc } from '../connectors'
 
 // TODO
-export const ROUTER_ADDRESS = '0x30d55D24e53FE71a53339dcEa6D5CEa76D5a56Af'
-export const FACTORY_ADDRESS = '0x43D188a7910dCD1CCD35cF94dA254Bf341c037e7'
-export const INIT_CODE = '0xbdcf3ab7a288904d4217bc7faa760e775a6399e2ca29b4885f4adb17c83a8c35'
+export const ROUTER_ADDRESS = process.env.ROUTER_ADDRESS || '0x30d55D24e53FE71a53339dcEa6D5CEa76D5a56Af'
+export const FACTORY_ADDRESS = process.env.FACTORY_ADDRESS || '0x43D188a7910dCD1CCD35cF94dA254Bf341c037e7'
+export const INIT_CODE = process.env.INIT_CODE ||  '0xbdcf3ab7a288904d4217bc7faa760e775a6399e2ca29b4885f4adb17c83a8c35'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -21,8 +21,9 @@ export const EOS = new Token(ChainId.MAINNET, '0x56b6fb708fc5732dec1afc8d8556423
 export const DOT = new Token(ChainId.MAINNET, '0x7083609fce4d1d8dc0c979aab8c869ea2c873402', 18, 'DOT', 'Polkadot Token')
 export const ETH = new Token(ChainId.MAINNET, '0x2170ed0880ac9a755fd29b2688956bd959f933f8', 18, 'ETH', 'Ethereum Token')
 export const BETH = new Token(ChainId.MAINNET, '0x250632378E573c6Be1AC2f97Fcdf00515d0Aa91B', 18, 'BETH', 'Binance Beacon Ethereum Token')
-export const BANANA = new Token(ChainId.BSCTESTNET, '0xaf80eb6d7a348424d72f1fa203bb9d5511ddd08b', 18, 'BANANA', 'Ape like banana')
-export const WBNB = new Token(ChainId.BSCTESTNET, '0xd2e4e9ebdf9a3d97a955d990113327d1a8b2f83d', 18, 'WBNB', 'Ape like banana')
+
+export const DURIAN = new Token(ChainId.BSCTESTNET, '0x32eed5593cae8103839dfa86351d0388430cdc12', 18, 'DURIAN', 'The king of fruits')
+
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
@@ -32,7 +33,7 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT, EOS, DOT],
-  [ChainId.BSCTESTNET]: [...WETH_ONLY[ChainId.BSCTESTNET], BANANA, WBNB]
+  [ChainId.BSCTESTNET]: [...WETH_ONLY[ChainId.BSCTESTNET], DURIAN]
 }
 
 /**
@@ -49,14 +50,14 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT],
-  [ChainId.BSCTESTNET]: [BANANA]
+  [ChainId.BSCTESTNET]: [DURIAN]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT],
-  [ChainId.BSCTESTNET]: [BANANA]
+  [ChainId.BSCTESTNET]: [DURIAN]
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
