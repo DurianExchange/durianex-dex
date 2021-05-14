@@ -1,5 +1,4 @@
 import { ChainId, Currency, CurrencyAmount, ETHER, Token, TokenAmount, WETH } from '@durianexchange/sdk'
-import { WBNB } from '../constants'
 
 export function wrappedCurrency(currency: Currency | undefined, chainId: ChainId | undefined): Token | undefined {
   // TODO DYNAMIC WBNB
