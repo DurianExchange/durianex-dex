@@ -21,8 +21,9 @@ export const EOS = new Token(ChainId.MAINNET, '0x56b6fb708fc5732dec1afc8d8556423
 export const DOT = new Token(ChainId.MAINNET, '0x7083609fce4d1d8dc0c979aab8c869ea2c873402', 18, 'DOT', 'Polkadot Token')
 export const ETH = new Token(ChainId.MAINNET, '0x2170ed0880ac9a755fd29b2688956bd959f933f8', 18, 'ETH', 'Ethereum Token')
 export const BETH = new Token(ChainId.MAINNET, '0x250632378E573c6Be1AC2f97Fcdf00515d0Aa91B', 18, 'BETH', 'Binance Beacon Ethereum Token')
+
 export const BANANA = new Token(ChainId.BSCTESTNET, '0xaf80eb6d7a348424d72f1fa203bb9d5511ddd08b', 18, 'BANANA', 'Ape like banana')
-export const WBNB = new Token(ChainId.BSCTESTNET, '0xd2e4e9ebdf9a3d97a955d990113327d1a8b2f83d', 18, 'WBNB', 'Ape like banana')
+
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
@@ -32,7 +33,7 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT, EOS, DOT],
-  [ChainId.BSCTESTNET]: [...WETH_ONLY[ChainId.BSCTESTNET], BANANA, WBNB]
+  [ChainId.BSCTESTNET]: [...WETH_ONLY[ChainId.BSCTESTNET], BANANA]
 }
 
 /**

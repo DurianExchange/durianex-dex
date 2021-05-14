@@ -4,7 +4,7 @@ import { WBNB } from '../constants'
 export function wrappedCurrency(currency: Currency | undefined, chainId: ChainId | undefined): Token | undefined {
   // TODO DYNAMIC WBNB
   // eslint-disable-next-line no-nested-ternary
-  return chainId && currency === ETHER ? WBNB : currency instanceof Token ? currency : undefined
+  return chainId && currency === ETHER ? WETH[chainId] : currency instanceof Token ? currency : undefined
 }
 
 export function wrappedCurrencyAmount(
