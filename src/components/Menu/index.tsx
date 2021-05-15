@@ -39,7 +39,6 @@ const Menu: React.FC = (props) => {
       langs={allLanguages}
       setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd}
-      profile={profile}
       {...props}
     />
   )
