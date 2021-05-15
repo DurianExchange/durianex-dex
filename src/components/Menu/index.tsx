@@ -23,7 +23,7 @@ const Menu: React.FC = (props) => {
       account={account as string}
       login={(connectorId: ConnectorId) => {
         if (connectorId === 'walletconnect') {
-          return activate(walletconnect)z
+          return activate(walletconnect)
         }
 
         if (connectorId === 'bsc') {
