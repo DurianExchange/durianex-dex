@@ -31,7 +31,7 @@ const config: MenuEntry[] = [
     icon: 'PoolIcon',
     href: 'http://localhost:3000/syrup',
   },
-  {
+  /* {
     label: 'Lottery',
     icon: 'TicketIcon',
     href: 'http://localhost:3000/lottery',
@@ -54,49 +54,49 @@ const config: MenuEntry[] = [
         href: 'http://localhost:3000/profile',
       },
     ],
-  },
+  }, */
   {
     label: 'Info',
     icon: 'InfoIcon',
     items: [
       {
         label: 'Overview',
-        href: 'https://pancakeswap.info',
+        href: 'https://info.durian.exchange',
       },
       {
         label: 'Tokens',
-        href: 'https://pancakeswap.info/tokens',
+        href: 'https://info.durian.exchange/tokens',
       },
       {
         label: 'Pairs',
-        href: 'https://pancakeswap.info/pairs',
+        href: 'https://info.durian.exchange/pairs',
       },
       {
         label: 'Accounts',
-        href: 'https://pancakeswap.info/accounts',
+        href: 'https://info.durian.exchange/accounts',
       },
     ],
   },
-  {
+  /* {
     label: 'IFO',
     icon: 'IfoIcon',
     href: 'http://localhost:3000/ifo',
-  },
+  }, */
   {
     label: 'More',
     icon: 'MoreIcon',
     items: [
-      {
+      /* {
         label: 'Voting',
         href: 'https://voting.pancakeswap.finance',
-      },
+      }, */
       {
         label: 'Github',
-        href: 'https://github.com/pancakeswap',
+        href: 'https://github.com/DurianExchange',
       },
       {
         label: 'Docs',
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://docs.durian.exchange',
       },
       {
         label: 'Blog',
